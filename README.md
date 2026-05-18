@@ -22,7 +22,8 @@
 |---|---|---|
 | <img width="1238" height="785" alt="Screenshot 2026-05-18 174826" src="https://github.com/user-attachments/assets/7b19744d-50fc-4a31-8acb-3172d675a2b7" />|
 | <img width="1864" height="887" alt="Screenshot 2026-05-18 175802" src="https://github.com/user-attachments/assets/6b2625e6-1034-4852-a55e-7f30a73fe2d5" />
- | ![Admin](https://via.placeholder.com/280x160/0a1628/4da6e8?text=Admin+Panel) |
+ |<img width="1885" height="858" alt="Screenshot 2026-05-18 180248" src="https://github.com/user-attachments/assets/44336d05-2277-4be4-aca5-94ce593269d5" />
+|
 
 | Report Incident | Investigation | AI Chatbot |
 |---|---|---|
