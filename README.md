@@ -20,7 +20,7 @@
 
 | Landing Page | Employee Dashboard | Admin Dashboard |
 |---|---|---|
-| ![Landing]<img width="1238" height="785" alt="Screenshot 2026-05-18 174826" src="https://github.com/user-attachments/assets/7b19744d-50fc-4a31-8acb-3172d675a2b7" />
+| <img width="1238" height="785" alt="Screenshot 2026-05-18 174826" src="https://github.com/user-attachments/assets/7b19744d-50fc-4a31-8acb-3172d675a2b7" />|
 | ![Employee](https://via.placeholder.com/280x160/0a1628/3ecf8e?text=Employee+Panel) | ![Admin](https://via.placeholder.com/280x160/0a1628/4da6e8?text=Admin+Panel) |
 
 | Report Incident | Investigation | AI Chatbot |
