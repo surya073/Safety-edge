@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "targets": [
+      "safetyedge_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "safetyedge-client",
+    "plugin": "zcatalyst-cli-plugin-react"
+  }
+}
