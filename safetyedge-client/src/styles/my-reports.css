@@ -1,0 +1,275 @@
+/* ── MY REPORTS TIMELINE ── */
+
+.tl-loading {
+  color: var(--white-30);
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+.tl-root {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* ── Month Group ── */
+.tl-group {}
+
+.tl-month-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.tl-month-pill {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue-brand);
+  background: rgba(77, 166, 232, 0.1);
+  border: 1px solid rgba(77, 166, 232, 0.2);
+  border-radius: 100px;
+  padding: 5px 14px;
+  white-space: nowrap;
+}
+
+.tl-month-line {
+  flex: 1;
+  height: 1px;
+  background: var(--white-10);
+}
+
+.tl-month-count {
+  font-size: 11px;
+  color: var(--white-30);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ── Timeline Items ── */
+.tl-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.tl-row {
+  display: grid;
+  grid-template-columns: 110px 32px 1fr;
+  gap: 0 12px;
+  align-items: flex-start;
+  min-height: 60px;
+}
+
+/* Left date column */
+.tl-date-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 14px;
+  gap: 3px;
+}
+
+.tl-day {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white-70);
+  text-align: right;
+}
+
+.tl-time {
+  font-size: 11px;
+  color: var(--white-30);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Center dot + line */
+.tl-center-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.tl-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--navy-mid, #141928);
+  z-index: 1;
+}
+
+.tl-dot-inner {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.tl-line {
+  width: 2px;
+  flex: 1;
+  min-height: 24px;
+  background: var(--white-10);
+  margin-top: 4px;
+}
+
+/* Right card */
+.tl-card {
+  background: var(--white-5);
+  border: 1px solid var(--white-10);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  overflow: hidden;
+}
+
+.tl-card:hover {
+  border-color: rgba(77, 166, 232, 0.3);
+  background: rgba(77, 166, 232, 0.04);
+}
+
+.tl-card.open {
+  border-color: rgba(77, 166, 232, 0.4);
+}
+
+.tl-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.tl-type-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.tl-card-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tl-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tl-card-type {
+  font-size: 11px;
+  color: var(--white-30);
+  font-weight: 500;
+}
+
+.tl-badges {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.tl-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 100px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.tl-chevron {
+  font-size: 10px;
+  color: var(--white-30);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+/* Expanded detail */
+.tl-card-detail {
+  padding: 0 16px 16px;
+  border-top: 1px solid var(--white-10);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: tl-expand 0.2s ease;
+}
+
+@keyframes tl-expand {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.tl-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--white-50, #888);
+  padding-top: 10px;
+}
+
+.tl-desc {
+  font-size: 13px;
+  color: var(--white-70);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Photos */
+.tl-photos {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.tl-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--white-10);
+  transition: transform 0.15s ease;
+  cursor: zoom-in;
+}
+
+.tl-photo:hover {
+  transform: scale(1.05);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .tl-row {
+    grid-template-columns: 80px 24px 1fr;
+    gap: 0 8px;
+  }
+
+  .tl-day {
+    font-size: 10px;
+  }
+
+  .tl-badges {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .tl-card-top {
+    flex-wrap: wrap;
+  }
+}
